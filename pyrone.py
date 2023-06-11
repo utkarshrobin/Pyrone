@@ -46,11 +46,11 @@ else:
     M5 = None
 
 
-ONE_WORDS = ["TERI", "MAA", "KI", "CHUT", "AJA", "TERI", "MAA", "KI", "CHUT", "FAAD", "DUNGA", "HIJDE", "TERA", "BAAP",
-           "HU", "KIDXX", "SPEED", "PAKAD", "BHEN KE LAUDE", "AA BETA", "AAGYA", "TERI", "MAA ", "CHODNE",
+ONE_WORDS = ["𝙐𝙩𝙠𝙖𝙧𝙨𝙝 𝙥𝙖𝙥𝙖 𝙗𝙤𝙡", "𝙏𝙀𝙍𝙄 𝙈𝘼𝘼", "KI", "CHUT", "𝘼𝘼𝙅𝘼", "𝙏𝙀𝙍𝙄", "𝙈𝘼𝘼", "KI", "CHUT", "𝙁𝘼𝘼𝘿", "DUNGA", "𝙃𝙄𝙅𝘿𝙀", "TERA", "BAAP",
+           "HU", "𝙆𝙄𝘿𝙎𝙎", "SPEED", "PAKAD", "𝘽𝘼𝙃𝙀𝙀𝙉𝘾𝙃𝙊𝘿", "AA BETA", "AAGYA", "𝘽𝙀𝙏𝘼", "MAA ", "CHODNE",
            "AB", "TERI ", "MAA", "CHUDEGI", "KUTTE", "KI", "TARAH", "BETA", "TERI", "MAA", "KE", "BHOSDE",
            "ME", "JBL", "KE", "SPEAKER", "DAAL", "KAR", "BASS", "BOOSTED", "SONG", "SUNUNGA", "PURI",
-           "RAAT", "LAGATAR", "TERI", "MAA", "KE", "SATH", "SEX", "KARUNGA🔥", "TERI", "MAA", "KE", "BOOBS",
+           "RAAT", "LAGATAR", "TERI", "MAA", "KE", "SATH", "SEX", "𝙆𝘼𝙇𝙇𝘼𝙋", "TERI", "MAA", "KE", "BOOBS",
            "DABAUNGA","XXX","TERI","MAA","KAA","CHUT","MARU","RANDI","KEE","PILEE","TERI","MAA","KAA","BHOSDAA",
            "MARU","SUAR","KEE","CHODE","TERI","MAAA","KEEE","NUDES","BECHUNGA","RANDI","KEE","PILLE","TERI","MAAA",
            "CHODU","SUAR","KEEE","PILEE","TERIII","MAAA","DAILYY","CHUDTTI","HAII","MADHARCHOD","AUKAT","BANAA",
@@ -58,7 +58,7 @@ ONE_WORDS = ["TERI", "MAA", "KI", "CHUT", "AJA", "TERI", "MAA", "KI", "CHUT", "F
            "CHUTT","MARU","TERII","BEHEN","KAAA","BHOSDAA","MARU","RANDII","KEEE","CHODE","TERI","DADI","KAAA","BOOR",
            "GARAM","KARR","TERE","PUREE","KHANDAN","KOOO","CHODUNGAA","BAAP","SEE","BAKCHODI","KAREGAA","SUARR",
            "KEEE","PILLEE","NAAK","MEEE","NETAA","BAAP","KOO","KABHII","NAAH","BOLNAA","BETAA","CHUSS","LEEE",
-           "MERAA","LODAA","JAISE","ALUU","KAAA","PAKODAA","TERI","MAAA","BEHEN","GFF","NANI","DIIN","RAAT","SOTEE",
+           "MERAA","𝘾𝙃𝙇 𝘼𝘽 𝙋𝘼𝙋𝘼 𝘽𝙊𝙇","🅙🅐🅣🅘🅝 🅜🅐🅓🅡🅒🅗🅞🅓","ALUU","KAAA","PAKODAA","TERI","MAAA","BEHEN","GFF","NANI","DIIN","RAAT","SOTEE",
            "JAGTEE","PELTAA","HUUU","LODEE","CHAAR","CHAWNII","GHODEE","PEEE","TUMM","MEREE","LODEE","PEE","TERI",
            "MAA","KAAA","BOOBS","DABATA HU", "TERI", "MAA", "KI", "CHUT", "AJA", "TERI", "MAA", "KI", "CHUT",
            "FAAD", "DUNGA", "HIJDE", "TERA", "BAAP","HU", "KIDXX", "SPEED", "PAKAD", "BHEN KE LAUDE", "AA BETA",
@@ -94,7 +94,7 @@ async def pyrone(client: Client, message: Message):
         for word in ONE_WORDS:
             await client.send_chat_action(chat_id, "typing")
             await client.send_message(chat_id, word, reply_to_message_id=ruser)
-            await asyncio.sleep(0.05)
+            await asyncio.sleep(0.0)
     except FloodWait:
         pass
 
